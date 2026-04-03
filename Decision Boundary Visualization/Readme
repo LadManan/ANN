@@ -1,0 +1,83 @@
+# 🧠 Decision Boundary Visualization using ANN
+
+## 📌 Overview
+
+Built a neural network classifier to visualize how decision boundaries are formed in feature space.
+
+✔ Multiclass classification (Iris dataset)  
+✔ Visualized nonlinear decision regions  
+✔ Demonstrated model interpretability  
+
+---
+
+## 📂 Dataset
+
+- Dataset: Iris Dataset (sklearn built-in)
+- Source: sklearn.datasets.load_iris()
+- Samples: 150
+- Features Used: 2 (for visualization)
+
+### Classes:
+
+Setosa  
+Versicolor  
+Virginica  
+
+---
+
+## ⚙️ Approach
+
+### 1. Data Preprocessing
+
+- Selected 2 features for visualization  
+- Applied StandardScaler  
+- Train-test split  
+
+### 2. Model Architecture
+
+Input Layer (2 features)  
+Dense (16) + ReLU  
+Dense (16) + ReLU  
+Output Layer (3 neurons, Softmax)
+
+### 3. Visualization
+
+- Created mesh grid  
+- Predicted class on grid  
+- Plotted contour regions  
+
+---
+
+## 📊 Results
+
+- High classification accuracy  
+- Clear nonlinear decision boundaries  
+
+---
+
+## 🧠 Key Insights
+
+- ANN captures nonlinear relationships  
+- Visualization improves interpretability  
+
+---
+
+## 🚀 How to Run
+
+pip install tensorflow numpy matplotlib scikit-learn  
+
+python decision_boundary.py  
+
+---
+
+## 📁 Project Structure
+
+decision-boundary-ann/  
+├── decision_boundary.py  
+└── README.md  
+
+---
+
+## 🧾 Conclusion
+
+Demonstrates how neural networks learn nonlinear decision boundaries.
