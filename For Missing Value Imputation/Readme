@@ -1,0 +1,70 @@
+# 🧩 Neural Network for Missing Value Imputation
+
+## 📌 Overview
+
+Used an autoencoder to impute missing values in tabular data.
+
+✔ Reconstruction-based learning  
+✔ Artificial masking  
+✔ Improved over baseline  
+
+---
+
+## 📂 Dataset
+
+- Dataset: Simulated Missing Value Dataset
+- Source: https://www.kaggle.com/datasets/kenjee/simulated-missing-value-and-outlier-data
+
+---
+
+## ⚙️ Approach
+
+### 1. Data Preparation
+
+- Created full dataset  
+- Artificially masked values  
+
+### 2. Model Architecture
+
+Input Layer  
+Dense (128) + ReLU  
+Dense (64) + ReLU  
+Bottleneck (32)  
+Dense (64) + ReLU  
+Dense (128) + ReLU  
+Output Layer  
+
+---
+
+## 📊 Results
+
+- ~2.8× lower MSE than mean imputation  
+
+---
+
+## 🧠 Key Insights
+
+- ANN learns feature relationships  
+- Better than statistical methods  
+
+---
+
+## 🚀 How to Run
+
+pip install tensorflow numpy pandas scikit-learn matplotlib  
+
+python imputation.py  
+
+---
+
+## 📁 Project Structure
+
+missing-value-imputation/  
+├── imputation.py  
+└── README.md  
+
+---
+
+## 🧾 Conclusion
+
+Demonstrates neural network-based imputation on tabular data.
