@@ -1,0 +1,82 @@
+# 🔥 Outlier Detection using Autoencoder
+
+## 📌 Overview
+
+Built an unsupervised anomaly detection system using autoencoders.
+
+✔ Reconstruction-based anomaly detection  
+✔ No labels required  
+✔ Threshold-based detection  
+
+---
+
+## 📂 Dataset
+
+- Dataset: Breast Cancer Wisconsin Dataset (sklearn)
+- Source: sklearn.datasets.load_breast_cancer()
+- Samples: 569
+
+### Classes:
+
+Normal (Benign)  
+Anomaly (Malignant)  
+
+---
+
+## ⚙️ Approach
+
+### 1. Data Preprocessing
+
+- Used only normal data for training  
+- Standardized features  
+
+### 2. Model Architecture
+
+Input Layer  
+Dense (16) + ReLU  
+Dense (8) + ReLU  
+Dense (4)  
+Dense (8) + ReLU  
+Dense (16) + ReLU  
+Output Layer  
+
+### 3. Detection Strategy
+
+- Reconstruction error  
+- Threshold tuning  
+
+---
+
+## 📊 Results
+
+- ~65–90% detection depending on threshold  
+- ~9× higher error for anomalies  
+
+---
+
+## 🧠 Key Insights
+
+- Threshold controls detection performance  
+- Strong separation between normal and anomalies  
+
+---
+
+## 🚀 How to Run
+
+pip install tensorflow numpy matplotlib scikit-learn  
+
+python anomaly_detection.py  
+
+---
+
+## 📁 Project Structure
+
+autoencoder-anomaly-detection/  
+├── anomaly_detection.py  
+└── README.md  
+
+---
+
+## 🧾 Conclusion
+
+Demonstrates unsupervised anomaly detection using reconstruction error.
